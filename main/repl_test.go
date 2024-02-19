@@ -29,12 +29,12 @@ func TestCleanInput(t *testing.T) {
 	for _, c := range cases {
 		actual := cleanInput(c.input)
 		if len(actual) != len(c.expected) {
-			t.Errorf("lengths do not match: actual - '%v' vs expected - '%v'", actual, c.expected)
+			t.Errorf("Lengths do not match: actual - '%v' vs expected - '%v'", actual, c.expected)
 			continue
 		}
 		for i := range actual {
 			if actual[i] != c.expected[i] {
-				t.Errorf("words %d do not match: actual - '%v' vs expected - '%v'", i, actual[i], c.expected[i])
+				t.Errorf("Words %d do not match: actual - '%v' vs expected - '%v'", i, actual[i], c.expected[i])
 			}
 		}
 	}
