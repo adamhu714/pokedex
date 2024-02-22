@@ -1,11 +1,19 @@
 package main
 
 import (
-	"net/http"
+	"log"
+
+	"github.com/adamhu714/pokedex/internal/pokeapi"
 )
 
 func commandMapF() error {
-	http.Get("https://google.com")
+	pokeapiClient := pokeapi.NewClient()
+
+	resp, err := pokeapiClient.ListLocationAreas()
+	if err != nil {
+		log.Fatal(err)
+	}
+	print(resp)
 	return nil
 }
 
