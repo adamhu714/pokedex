@@ -1,19 +1,17 @@
 package main
 
-import (
-	"log"
+// "log"
 
-	"github.com/adamhu714/pokedex/internal/pokeapi"
-)
+// "github.com/adamhu714/pokedex/internal/pokeapi"
 
 func commandMapF() error {
-	pokeapiClient := pokeapi.NewClient()
+	// pokeapiClient := pokeapi.NewClient()
 
-	resp, err := pokeapiClient.ListLocationAreas()
-	if err != nil {
-		log.Fatal(err)
-	}
-	print(resp)
+	// resp, err := pokeapiClient.ListLocationAreas()
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+	// print(resp.Next)
 	return nil
 }
 
