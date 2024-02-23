@@ -11,7 +11,7 @@ func startRepl() {
 	reader := bufio.NewScanner(os.Stdin)
 
 	for {
-		fmt.Print("pokedexCLI >")
+		fmt.Print("pokedexCLI > ")
 		reader.Scan()
 		words := cleanInput(reader.Text())
 		if len(words) == 0 {
@@ -60,7 +60,7 @@ func getCommands() map[string]cliCommand {
 		},
 		"map": {
 			name:        "map",
-			description: "",
+			description: "Lists some location areas",
 			callback:    commandMapF,
 		},
 		"mapb": {
