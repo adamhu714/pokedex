@@ -2,18 +2,16 @@ package main
 
 import (
 	"fmt"
-	"log"
-
-	"github.com/adamhu714/pokedex/internal/pokeapi"
 )
 
-func commandMapF() error {
-	pokeapiClient := pokeapi.NewClient()
+func commandMapF(cfg *config) error {
 
-	resp, err := pokeapiClient.ListLocationAreas()
+	resp, err := cfg.pokeapiClient.ListLocationAreas(cfg.nextLocationAreaURL)
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
+	cfg.nextLocationAreaURL = resp.Next
+	cfg.prevLocationAreaURL = resp.Previous
 	fmt.Println("Location areas:")
 	for _, area := range resp.Results {
 		fmt.Printf("%s\n", area.Name)
@@ -22,13 +20,14 @@ func commandMapF() error {
 	return nil
 }
 
-func commandMapB() error {
-	pokeapiClient := pokeapi.NewClient()
+func commandMapB(cfg *config) error {
 
-	resp, err := pokeapiClient.ListLocationAreas()
+	resp, err := cfg.pokeapiClient.ListLocationAreas(cfg.prevLocationAreaURL)
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
+	cfg.nextLocationAreaURL = resp.Next
+	cfg.prevLocationAreaURL = resp.Previous
 	fmt.Println("Location areas:")
 	for _, area := range resp.Results {
 		fmt.Printf("%s\n", area.Name)
