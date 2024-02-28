@@ -14,7 +14,7 @@ func commandMapF(cfg *config) error {
 	cfg.prevLocationAreaURL = resp.Previous
 	fmt.Println("Location areas:")
 	for _, area := range resp.Results {
-		fmt.Printf("%s\n", area.Name)
+		fmt.Printf(" - %s\n", area.Name)
 	}
 
 	return nil
@@ -30,7 +30,7 @@ func commandMapB(cfg *config) error {
 	cfg.prevLocationAreaURL = resp.Previous
 	fmt.Println("Location areas:")
 	for _, area := range resp.Results {
-		fmt.Printf("%s\n", area.Name)
+		fmt.Printf(" - %s\n", area.Name)
 	}
 
 	return nil
