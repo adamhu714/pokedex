@@ -56,22 +56,27 @@ func getCommands() map[string]cliCommand {
 		"help": {
 			name:        "help",
 			description: "Displays a help message",
-			callback:    commandHelp,
+			callback:    callbackHelp,
 		},
 		"map": {
 			name:        "map",
 			description: "Lists next page of location areas",
-			callback:    commandMapF,
+			callback:    callbackMapF,
 		},
 		"mapb": {
 			name:        "mapb",
 			description: "Lists previous page of location areas",
-			callback:    commandMapB,
+			callback:    callbackMapB,
+		},
+		"explore": {
+			name:        "explore",
+			description: "",
+			callback:    callbackExplore,
 		},
 		"exit": {
 			name:        "exit",
 			description: "Exits the program.",
-			callback:    commandExit,
+			callback:    callbackExit,
 		},
 	}
 }
