@@ -27,7 +27,7 @@ func startRepl(cfg *config) {
 		if command.name == "exit" {
 			break
 		}
-		err := command.callback(cfg)
+		err := command.callback(cfg, words[1:]...)
 		if err != nil {
 			fmt.Println(err)
 		}
