@@ -69,8 +69,8 @@ func getCommands() map[string]cliCommand {
 			callback:    callbackMapB,
 		},
 		"explore": {
-			name:        "explore",
-			description: "",
+			name:        "explore {location_area}",
+			description: "Lists the pokemon in a specified location area (eg 'explore pastoria-city-area' or 'explore 2')",
 			callback:    callbackExplore,
 		},
 		"exit": {

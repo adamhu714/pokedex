@@ -12,11 +12,14 @@ func callbackExplore(cfg *config, args ...string) error {
 
 	locationAreaName := args[0]
 
-	locationAreaResp, err := cfg.pokeapiClient.GetLocationArea(locationAreaName)
+	locationArea, err := cfg.pokeapiClient.GetLocationArea(locationAreaName)
 	if err != nil {
 		return err
 	}
 
-	fmt.Println(locationAreaResp.PokemonEncounters)
+	fmt.Printf("Exploring %s...\nFound Pokemon:\n", locationAreaName)
+	for _, encounter := range locationArea.PokemonEncounters {
+		fmt.Printf(" - %s\n", encounter.Pokemon.Name)
+	}
 	return nil
 }
