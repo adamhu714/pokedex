@@ -22,9 +22,10 @@ func callbackCatch(cfg *config, args ...string) error {
 	randNum := rand.Intn(pokemon.BaseExperience)
 
 	if randNum > threshold {
-		return fmt.Errorf("failed to catch %s", pokemonName)
+		return fmt.Errorf("failed to catch %s", pokemon.Name)
 	}
 
-	fmt.Printf("%s was caught!\n", pokemonName)
+	cfg.caughtPokemon[pokemon.Name] = pokemon
+	fmt.Printf("%s was caught!\n", pokemon.Name)
 	return nil
 }
