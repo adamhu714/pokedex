@@ -26,6 +26,7 @@ func callbackCatch(cfg *config, args ...string) error {
 	}
 
 	cfg.caughtPokemon[pokemon.Name] = pokemon
+	cfg.caughtPokemon[fmt.Sprint(pokemon.ID)] = pokemon
 	fmt.Printf("%s was caught!\n", pokemon.Name)
 	return nil
 }
