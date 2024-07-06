@@ -34,9 +34,7 @@ pokedexCLI > help
 
 Exit the CLI tool with the `exit` command.
 
-*[Back To Top](#pokédex)* <br>
-
 ## Unit Tests
-
+![image](https://github.com/adamhu714/pokedex/assets/105497355/6727dd77-acf1-4e39-a1c3-773a21aef7f5)
 
 *[Back To Top](#pokédex)* <br>
