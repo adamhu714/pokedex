@@ -1,5 +1,5 @@
 # Pokédex
-Read-Execute-Print-Loop(REPL) [Pokédex](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex) Application with caching.
+Read-Execute-Print-Loop (REPL) [Pokédex](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex) Application with caching.
 
 Features:
 - Ability to catch and inspect Pokémon in the terminal
