@@ -6,11 +6,7 @@ Features:
 - Usage of PokéAPI to deliver up to date and full Pokémon information
 - Caching of PokéAPI pages to optimize user experience
 
-## Contents
-* Getting Started
-* Commands
-
-## Getting Started
+## Usage
 ### Prerequisites
 Ensure you have Go v1.22+ installed on your system.
 
