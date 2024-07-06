@@ -5,6 +5,8 @@ Features:
 - Ability to catch and inspect Pokémon in the terminal
 - Usage of PokéAPI to deliver up to date and full Pokémon information
 - Caching of PokéAPI pages to optimize user experience
+- CLI Input sanitation
+- Unit Testing to ensure smooth development and maintenance
 
 ## Usage
 ### Prerequisites
@@ -31,5 +33,10 @@ pokedexCLI > help
 ```
 
 Exit the CLI tool with the `exit` command.
+
+*[Back To Top](#pokédex)* <br>
+
+## Unit Tests
+
 
 *[Back To Top](#pokédex)* <br>
