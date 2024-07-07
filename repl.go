@@ -59,8 +59,8 @@ func getCommands() map[string]cliCommand {
 			callback:    callbackHelp,
 		},
 		"catch": {
-			name:        "catch <pokemon_name>",
-			description: "Attempt to catch a pokemon (eg 'catch pikachu' or 'catch 151')",
+			name:        "catch <pokemon_name/id>",
+			description: "Attempt to catch a pokemon",
 			callback:    callbackCatch,
 		},
 		"map": {
@@ -74,12 +74,12 @@ func getCommands() map[string]cliCommand {
 			callback:    callbackMapB,
 		},
 		"explore": {
-			name:        "explore <location_area>",
-			description: "Lists the pokemon in a specified location area (eg 'explore pastoria-city-area' or 'explore 2')",
+			name:        "explore <location_area_name/id>",
+			description: "Lists the pokemon in a specified location area",
 			callback:    callbackExplore,
 		},
 		"inspect": {
-			name:        "inspect <pokemon>",
+			name:        "inspect <pokemon_name/id>",
 			description: "Lists information about pokemon entried in the pokedex",
 			callback:    callbackInspect,
 		},
