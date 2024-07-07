@@ -23,5 +23,6 @@ func callbackExplore(cfg *config, args ...string) error {
 	for _, encounter := range locationArea.PokemonEncounters {
 		fmt.Printf(" - %s\n", encounter.Pokemon.Name)
 	}
+	fmt.Println()
 	return nil
 }
