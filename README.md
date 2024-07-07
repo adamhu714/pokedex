@@ -65,7 +65,7 @@ Exit the CLI tool with the `exit` command or by pressing `CTRL + C`.
 
 ### catch <pokemon_name/id>
 
-Accepts 1 argument: <pokemon_name/id>
+Accepts one argument: <pokemon_name/id>
 
 Attempt to catch a pokemon. Rolls a random integer between 1 and the pokémon's base experience. Stronger pokémon have higher base experience. If the roll is 50 or lower, the pokémon is caught and added to the pokédex.
 
@@ -82,7 +82,7 @@ pokedexCLI > catch 151
 
 ### inspect <pokemon_name/id>
 
-Accepts 1 argument: <pokemon_name/id>
+Accepts one argument: <pokemon_name/id>
 
 Prints information about a specified pokémon, if they have been added to the pokédex.
 
@@ -117,7 +117,7 @@ Lists all the location areas on the previous page of location areas from the Pok
 
 ### explore <location_area_name/id>
 
-Accepts 1 argument: <location_area_name/id>
+Accepts one argument: <location_area_name/id>
 
 Lists the pokemon in a specified location area.
 
